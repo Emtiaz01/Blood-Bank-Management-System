@@ -41,19 +41,19 @@
             label10 = new Label();
             label11 = new Label();
             label12 = new Label();
-            textBox1 = new TextBox();
-            textBox2 = new TextBox();
-            textBox3 = new TextBox();
-            textBox4 = new TextBox();
-            textBox5 = new TextBox();
-            textBox6 = new TextBox();
-            dateTimePicker1 = new DateTimePicker();
-            comboBox1 = new ComboBox();
-            comboBox2 = new ComboBox();
-            richTextBox1 = new RichTextBox();
-            label13 = new Label();
-            button1 = new Button();
-            button2 = new Button();
+            txtName = new TextBox();
+            txtFather = new TextBox();
+            txtMother = new TextBox();
+            txtEmail = new TextBox();
+            txtMobile = new TextBox();
+            txtCity = new TextBox();
+            txtDOB = new DateTimePicker();
+            txtGender = new ComboBox();
+            txtBloodGroup = new ComboBox();
+            txtAddress = new RichTextBox();
+            labelNewId = new Label();
+            btnSave = new Button();
+            btnReset = new Button();
             button3 = new Button();
             SuspendLayout();
             // 
@@ -181,128 +181,136 @@
             label12.TabIndex = 1;
             label12.Text = "Address";
             // 
-            // textBox1
+            // txtName
             // 
-            textBox1.BackColor = Color.LemonChiffon;
-            textBox1.Location = new Point(245, 184);
-            textBox1.Name = "textBox1";
-            textBox1.Size = new Size(240, 31);
-            textBox1.TabIndex = 2;
+            txtName.BackColor = Color.LemonChiffon;
+            txtName.Location = new Point(245, 184);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(240, 31);
+            txtName.TabIndex = 2;
             // 
-            // textBox2
+            // txtFather
             // 
-            textBox2.BackColor = Color.LemonChiffon;
-            textBox2.Location = new Point(245, 266);
-            textBox2.Name = "textBox2";
-            textBox2.Size = new Size(240, 31);
-            textBox2.TabIndex = 2;
+            txtFather.BackColor = Color.LemonChiffon;
+            txtFather.Location = new Point(245, 266);
+            txtFather.Name = "txtFather";
+            txtFather.Size = new Size(240, 31);
+            txtFather.TabIndex = 2;
             // 
-            // textBox3
+            // txtMother
             // 
-            textBox3.BackColor = Color.LemonChiffon;
-            textBox3.Location = new Point(245, 333);
-            textBox3.Name = "textBox3";
-            textBox3.Size = new Size(240, 31);
-            textBox3.TabIndex = 2;
+            txtMother.BackColor = Color.LemonChiffon;
+            txtMother.Location = new Point(245, 333);
+            txtMother.Name = "txtMother";
+            txtMother.Size = new Size(240, 31);
+            txtMother.TabIndex = 2;
             // 
-            // textBox4
+            // txtEmail
             // 
-            textBox4.BackColor = Color.LemonChiffon;
-            textBox4.Location = new Point(724, 124);
-            textBox4.Name = "textBox4";
-            textBox4.Size = new Size(238, 31);
-            textBox4.TabIndex = 2;
+            txtEmail.BackColor = Color.LemonChiffon;
+            txtEmail.Location = new Point(724, 124);
+            txtEmail.Name = "txtEmail";
+            txtEmail.Size = new Size(238, 31);
+            txtEmail.TabIndex = 2;
             // 
-            // textBox5
+            // txtMobile
             // 
-            textBox5.BackColor = Color.LemonChiffon;
-            textBox5.Location = new Point(245, 465);
-            textBox5.Name = "textBox5";
-            textBox5.Size = new Size(240, 31);
-            textBox5.TabIndex = 2;
+            txtMobile.BackColor = Color.LemonChiffon;
+            txtMobile.Location = new Point(245, 465);
+            txtMobile.Name = "txtMobile";
+            txtMobile.Size = new Size(240, 31);
+            txtMobile.TabIndex = 2;
+            txtMobile.TextChanged += textBox5_TextChanged;
             // 
-            // textBox6
+            // txtCity
             // 
-            textBox6.BackColor = Color.LemonChiffon;
-            textBox6.Location = new Point(724, 330);
-            textBox6.Name = "textBox6";
-            textBox6.Size = new Size(238, 31);
-            textBox6.TabIndex = 2;
+            txtCity.BackColor = Color.LemonChiffon;
+            txtCity.Location = new Point(724, 330);
+            txtCity.Name = "txtCity";
+            txtCity.Size = new Size(238, 31);
+            txtCity.TabIndex = 2;
             // 
-            // dateTimePicker1
+            // txtDOB
             // 
-            dateTimePicker1.CalendarMonthBackground = Color.LemonChiffon;
-            dateTimePicker1.CalendarTitleBackColor = Color.LemonChiffon;
-            dateTimePicker1.CalendarTitleForeColor = Color.AliceBlue;
-            dateTimePicker1.Format = DateTimePickerFormat.Short;
-            dateTimePicker1.Location = new Point(245, 403);
-            dateTimePicker1.Name = "dateTimePicker1";
-            dateTimePicker1.Size = new Size(240, 31);
-            dateTimePicker1.TabIndex = 3;
-            dateTimePicker1.ValueChanged += dateTimePicker1_ValueChanged;
+            txtDOB.CalendarMonthBackground = Color.LemonChiffon;
+            txtDOB.CalendarTitleBackColor = Color.LemonChiffon;
+            txtDOB.CalendarTitleForeColor = Color.AliceBlue;
+            txtDOB.Format = DateTimePickerFormat.Short;
+            txtDOB.Location = new Point(245, 403);
+            txtDOB.Name = "txtDOB";
+            txtDOB.Size = new Size(240, 31);
+            txtDOB.TabIndex = 3;
+            txtDOB.ValueChanged += dateTimePicker1_ValueChanged;
             // 
-            // comboBox1
+            // txtGender
             // 
-            comboBox1.BackColor = Color.LemonChiffon;
-            comboBox1.FormattingEnabled = true;
-            comboBox1.Location = new Point(724, 190);
-            comboBox1.Name = "comboBox1";
-            comboBox1.Size = new Size(238, 33);
-            comboBox1.TabIndex = 4;
+            txtGender.BackColor = Color.LemonChiffon;
+            txtGender.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtGender.FormattingEnabled = true;
+            txtGender.Items.AddRange(new object[] { "Male", "Female", "Others" });
+            txtGender.Location = new Point(724, 190);
+            txtGender.Name = "txtGender";
+            txtGender.Size = new Size(238, 33);
+            txtGender.TabIndex = 4;
+            txtGender.SelectedIndexChanged += comboBox1_SelectedIndexChanged;
             // 
-            // comboBox2
+            // txtBloodGroup
             // 
-            comboBox2.BackColor = Color.LemonChiffon;
-            comboBox2.FormattingEnabled = true;
-            comboBox2.Location = new Point(729, 263);
-            comboBox2.Name = "comboBox2";
-            comboBox2.Size = new Size(238, 33);
-            comboBox2.TabIndex = 4;
+            txtBloodGroup.BackColor = Color.LemonChiffon;
+            txtBloodGroup.DropDownStyle = ComboBoxStyle.DropDownList;
+            txtBloodGroup.FormattingEnabled = true;
+            txtBloodGroup.Items.AddRange(new object[] { "A+", "A-", "B+", "B-", "O+", "O-", "AB+", "AB-" });
+            txtBloodGroup.Location = new Point(729, 263);
+            txtBloodGroup.Name = "txtBloodGroup";
+            txtBloodGroup.Size = new Size(238, 33);
+            txtBloodGroup.TabIndex = 4;
             // 
-            // richTextBox1
+            // txtAddress
             // 
-            richTextBox1.BackColor = Color.LemonChiffon;
-            richTextBox1.Location = new Point(724, 400);
-            richTextBox1.Name = "richTextBox1";
-            richTextBox1.Size = new Size(238, 144);
-            richTextBox1.TabIndex = 5;
-            richTextBox1.Text = "";
+            txtAddress.BackColor = Color.LemonChiffon;
+            txtAddress.Location = new Point(724, 400);
+            txtAddress.Name = "txtAddress";
+            txtAddress.Size = new Size(238, 144);
+            txtAddress.TabIndex = 5;
+            txtAddress.Text = "";
             // 
-            // label13
+            // labelNewId
             // 
-            label13.AutoSize = true;
-            label13.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label13.ForeColor = Color.Red;
-            label13.Location = new Point(245, 119);
-            label13.Name = "label13";
-            label13.Size = new Size(26, 30);
-            label13.TabIndex = 1;
-            label13.Text = "1";
-            label13.Click += label2_Click;
+            labelNewId.AutoSize = true;
+            labelNewId.Font = new Font("Segoe UI", 11F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            labelNewId.ForeColor = Color.Red;
+            labelNewId.Location = new Point(245, 119);
+            labelNewId.Name = "labelNewId";
+            labelNewId.Size = new Size(26, 30);
+            labelNewId.TabIndex = 1;
+            labelNewId.Text = "1";
+            labelNewId.Click += label2_Click;
             // 
-            // button1
+            // btnSave
             // 
-            button1.BackColor = Color.LemonChiffon;
-            button1.Image = (Image)resources.GetObject("button1.Image");
-            button1.ImageAlign = ContentAlignment.MiddleLeft;
-            button1.Location = new Point(174, 612);
-            button1.Name = "button1";
-            button1.Size = new Size(112, 34);
-            button1.TabIndex = 6;
-            button1.Text = "Save";
-            button1.UseVisualStyleBackColor = false;
+            btnSave.BackColor = Color.LemonChiffon;
+            btnSave.Image = (Image)resources.GetObject("btnSave.Image");
+            btnSave.ImageAlign = ContentAlignment.MiddleLeft;
+            btnSave.Location = new Point(174, 612);
+            btnSave.Name = "btnSave";
+            btnSave.Size = new Size(112, 34);
+            btnSave.TabIndex = 6;
+            btnSave.Text = "Save";
+            btnSave.UseVisualStyleBackColor = false;
+            btnSave.Click += btnSave_Click;
             // 
-            // button2
+            // btnReset
             // 
-            button2.BackColor = Color.LemonChiffon;
-            button2.Image = (Image)resources.GetObject("button2.Image");
-            button2.ImageAlign = ContentAlignment.MiddleLeft;
-            button2.Location = new Point(459, 612);
-            button2.Name = "button2";
-            button2.Size = new Size(112, 34);
-            button2.TabIndex = 6;
-            button2.Text = "Reset";
-            button2.UseVisualStyleBackColor = false;
+            btnReset.BackColor = Color.LemonChiffon;
+            btnReset.Image = (Image)resources.GetObject("btnReset.Image");
+            btnReset.ImageAlign = ContentAlignment.MiddleLeft;
+            btnReset.Location = new Point(459, 612);
+            btnReset.Name = "btnReset";
+            btnReset.Size = new Size(112, 34);
+            btnReset.TabIndex = 6;
+            btnReset.Text = "Reset";
+            btnReset.UseVisualStyleBackColor = false;
+            btnReset.Click += btnReset_Click_1;
             // 
             // button3
             // 
@@ -326,18 +334,18 @@
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             ClientSize = new Size(1015, 700);
             Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
-            Controls.Add(richTextBox1);
-            Controls.Add(comboBox2);
-            Controls.Add(comboBox1);
-            Controls.Add(dateTimePicker1);
-            Controls.Add(textBox5);
-            Controls.Add(textBox6);
-            Controls.Add(textBox4);
-            Controls.Add(textBox3);
-            Controls.Add(textBox2);
-            Controls.Add(textBox1);
+            Controls.Add(btnReset);
+            Controls.Add(btnSave);
+            Controls.Add(txtAddress);
+            Controls.Add(txtBloodGroup);
+            Controls.Add(txtGender);
+            Controls.Add(txtDOB);
+            Controls.Add(txtMobile);
+            Controls.Add(txtCity);
+            Controls.Add(txtEmail);
+            Controls.Add(txtMother);
+            Controls.Add(txtFather);
+            Controls.Add(txtName);
             Controls.Add(label12);
             Controls.Add(label11);
             Controls.Add(label10);
@@ -348,13 +356,14 @@
             Controls.Add(label5);
             Controls.Add(label4);
             Controls.Add(label3);
-            Controls.Add(label13);
+            Controls.Add(labelNewId);
             Controls.Add(label2);
             Controls.Add(label1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AddNewDonor";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AddNewDonor";
+            Load += AddNewDonor_Load;
             ResumeLayout(false);
             PerformLayout();
         }
@@ -383,9 +392,21 @@
         private ComboBox comboBox1;
         private ComboBox comboBox2;
         private RichTextBox richTextBox1;
-        private Label label13;
+        private Label labelNewId;
         private Button button1;
         private Button button2;
         private Button button3;
+        private TextBox txtName;
+        private TextBox txtFather;
+        private TextBox txtMother;
+        private DateTimePicker txtDOB;
+        private TextBox txtEmail;
+        private TextBox txtMobile;
+        private TextBox txtCity;
+        private ComboBox txtGender;
+        private ComboBox txtBloodGroup;
+        private RichTextBox txtAddress;
+        private Button btnSave;
+        private Button btnReset;
     }
 }

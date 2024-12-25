@@ -76,7 +76,7 @@
             addNewDonoToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             addNewDonoToolStripMenuItem.Name = "addNewDonoToolStripMenuItem";
             addNewDonoToolStripMenuItem.Size = new Size(270, 34);
-            addNewDonoToolStripMenuItem.Text = "Add New Dono";
+            addNewDonoToolStripMenuItem.Text = "Add New Donor";
             addNewDonoToolStripMenuItem.Click += addNewDonoToolStripMenuItem_Click;
             // 
             // updateDetailsToolStripMenuItem
