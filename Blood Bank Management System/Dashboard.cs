@@ -31,5 +31,15 @@ namespace Blood_Bank_Management_System
         {
 
         }
+
+        private void donorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void addNewDonoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            AddNewDonor and = new AddNewDonor(); and.Show();
+        }
     }
 }

@@ -67,6 +67,7 @@
             donorToolStripMenuItem.Name = "donorToolStripMenuItem";
             donorToolStripMenuItem.Size = new Size(129, 64);
             donorToolStripMenuItem.Text = "Donor";
+            donorToolStripMenuItem.Click += donorToolStripMenuItem_Click;
             // 
             // addNewDonoToolStripMenuItem
             // 
@@ -74,8 +75,9 @@
             addNewDonoToolStripMenuItem.ImageAlign = ContentAlignment.MiddleLeft;
             addNewDonoToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             addNewDonoToolStripMenuItem.Name = "addNewDonoToolStripMenuItem";
-            addNewDonoToolStripMenuItem.Size = new Size(248, 34);
+            addNewDonoToolStripMenuItem.Size = new Size(270, 34);
             addNewDonoToolStripMenuItem.Text = "Add New Dono";
+            addNewDonoToolStripMenuItem.Click += addNewDonoToolStripMenuItem_Click;
             // 
             // updateDetailsToolStripMenuItem
             // 
@@ -83,7 +85,7 @@
             updateDetailsToolStripMenuItem.ImageAlign = ContentAlignment.MiddleLeft;
             updateDetailsToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             updateDetailsToolStripMenuItem.Name = "updateDetailsToolStripMenuItem";
-            updateDetailsToolStripMenuItem.Size = new Size(248, 34);
+            updateDetailsToolStripMenuItem.Size = new Size(270, 34);
             updateDetailsToolStripMenuItem.Text = "Update Details";
             // 
             // allDonorListToolStripMenuItem
@@ -92,7 +94,7 @@
             allDonorListToolStripMenuItem.ImageAlign = ContentAlignment.MiddleLeft;
             allDonorListToolStripMenuItem.ImageScaling = ToolStripItemImageScaling.None;
             allDonorListToolStripMenuItem.Name = "allDonorListToolStripMenuItem";
-            allDonorListToolStripMenuItem.Size = new Size(248, 34);
+            allDonorListToolStripMenuItem.Size = new Size(270, 34);
             allDonorListToolStripMenuItem.Text = "All Donor Details";
             allDonorListToolStripMenuItem.Click += allDonorListToolStripMenuItem_Click;
             // 
