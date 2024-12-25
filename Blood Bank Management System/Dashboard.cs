@@ -10,11 +10,26 @@ using System.Windows.Forms;
 
 namespace Blood_Bank_Management_System
 {
-    public partial class Dashboard : Form
+    public partial class dashboard : Form
     {
-        public Dashboard()
+        public dashboard()
         {
             InitializeComponent();
+        }
+
+        private void allDonorListToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void logOutToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Form1 fm = new Form1(); fm.Show(); this.Hide();
+        }
+
+        private void dashboard_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

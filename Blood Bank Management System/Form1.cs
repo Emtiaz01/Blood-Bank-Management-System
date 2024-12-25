@@ -1,5 +1,3 @@
-using System.Security.Cryptography;
-
 namespace Blood_Bank_Management_System
 {
     public partial class Form1 : Form
@@ -18,7 +16,7 @@ namespace Blood_Bank_Management_System
         {
             if (txtUsername.Text == "Emtiaz" && txtPassword.Text == "pass")
             {
-                Dashboard db = new Dashboard();
+                dashboard db = new dashboard();
                 db.Show();
                 this.Hide();
             }
